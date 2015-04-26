@@ -1,0 +1,59 @@
+package com.example.calculator;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Button;
+
+public class MainActivity extends Activity {
+
+	public Button bt_1;
+	public Button bt_2;
+	public Button bt_3;
+	public Button bt_4;
+	public Button bt_5;
+	public Button bt_6;
+	public Button bt_7;
+	public Button bt_8;
+	public Button bt_9;
+	public Button bt_0;
+	public Button bt_add;
+	public Button bt_sub;
+	public Button bt_multiply;
+	public Button bt_divide;
+	public Button bt_back;
+	public Button bt_equal;
+	public Button bt_point;
+	public Button bt_clear;
+	public Button et_play;
+	
+	public String str_oper="+";
+	public StringBuffer str_display=new StringBuffer();
+	
+	
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+}

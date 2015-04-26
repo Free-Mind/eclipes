@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.calculator.MainActivity" >
+		<TableLayout
+		    android:id="@id/tableLayout1"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		 	android:collapseColumns="4"
+		    >
+		    <TableRow
+		        android:id="@+id/tableRow_et"
+		        android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        >
+		        <EdtiText
+		            	android:id="@+id/et"
+		            	android:layout_width="fill_parent"
+		            	android:layout_height="fill_parent"
+						android:layout_span="4"
+						android:focusable="false"
+		            	android:singLeLine="true"
+		            	android:inputType="text"
+		            	android:layout_gravity="right"
+		            >
+ 
+</LinearLayout>
